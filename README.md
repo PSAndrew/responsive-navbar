@@ -1,2 +1,7 @@
 # responsive-navbar
-Just playing around with an all HTML and CSS responsive navbar from scratch. May add JavaScript to it later.
+
+This is a simple bar styled HTML and CSS drop down navigation bar 3 levels deep.
+
+The first branch is a simple desktop navigation bar (starting point)
+
+Next I will create a responsive navigation bar that will contain two break points

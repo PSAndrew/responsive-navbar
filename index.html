@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Responsive Nav Bar</title>
+</head>
+
+<!-- styles begin -->
+<style>
+	*{
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		list-style: none;
+	}
+	
+	/*top nav styles*/
+	nav{
+		background-color: #aaa;
+		height: 3em;
+		width: 100%;
+	}
+	.topnav{
+		background-color: #aaa;
+		height: auto;
+		text-align: center;
+	}
+	.topnav li{
+		background-color: #aaa;
+		display: inline-block;
+		float: left;
+		/*position: relative;*/
+		width: 150px;
+	}
+	.topnav li a{
+		color: #555;
+		display: block;
+		line-height: 3em;
+		padding: 0 10px;
+		white-space: nowrap;
+	}
+	.topnav li a:hover{
+		color: #000;
+		background-color: #999;
+	}
+	li:hover .subnav{
+		display: inline-block;
+		float: left;
+		top: 3em;
+		z-index: 999;
+	}
+	.subnav{
+		background-color: #aaa;
+		/*display: none;*/
+		left: 0;
+		position: absolute;
+		width: 100%;
+	}
+	.subnav li:hover .subsubnav{
+		display: inline-block;
+		left: 0;
+		position: relative;
+		z-index: 999;
+	}
+	.subsubnav{
+		background-color: #aaa;
+		/*display: none;*/
+		position: relative;
+		left: 0;
+		width: 100%;
+	}
+
+	/*top nav styles*/
+
+
+</style>
+<!-- styles end -->
+
+<body>
+	<header>
+		<nav>
+			<ul class="topnav">
+			<!-- Top level menu begins -->
+				<li><a href="#">Page One</a></li>
+				<li><a href="#">Page Two</a>
+					<ul class="subnav">
+					<!-- Sub level menu begins -->
+						<li><a href="#">Sub-Page One</a></li>
+						<li><a href="#">Sub-Page Two</a></li>
+						<li><a href="#">Sub-Page Three</a></li>
+						<li><a href="#">Sub-Page Four</a>
+							<ul class="subsubnav">
+							<!-- Sub Sub level menu begins -->
+								<l1><a href="#">Sub Sub-Page One</a></l1>
+								<l1><a href="#">Sub Sub-Page Two</a></l1>
+								<l1><a href="#">Sub Sub-Page Three</a></l1>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Page Three</a></li>
+				<li><a href="#">Page Four</a></li>
+				<li><a href="#">Page Five</a></li>
+			</ul>
+		</nav>
+	</header>
+</body>
+</html>
